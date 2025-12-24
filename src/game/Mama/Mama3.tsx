@@ -14,7 +14,6 @@ export default function Mama3() {
   useEffect(() => {
     if (!isDone("mama", 2)) nav(go("mama", 2, "wait"));
   }, [nav]);
-
  
   const canContinue = p >= 0.25;
 
