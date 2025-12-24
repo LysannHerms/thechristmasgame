@@ -4,23 +4,7 @@ import Index from "./pages/Index";
 import Admin from "./pages/Admin";
 import { START, ROUTES } from "./lib/routes";
 
-// Oma imports
-import Oma1 from "./game/Oma/Oma1";
-import OmaStart from "./game/Oma/OmaStart";
-import Oma1Wait from "./game/Oma/Oma1Wait";
-import Oma2 from "./game/Oma/Oma2";
-import Oma2Wait from "./game/Oma/Oma2Wait";
-import Oma3 from "./game/Oma/Oma3";
-import Oma3Wait from "./game/Oma/Oma3Wait";
-import Oma4 from "./game/Oma/Oma4";
-import Oma4Wait from "./game/Oma/Oma4Wait";
-import Oma5 from "./game/Oma/Oma5";
-import Oma5Wait from "./game/Oma/Oma5Wait";
-import Oma6 from "./game/Oma/Oma6";
-import Oma6Wait from "./game/Oma/Oma6Wait";
-import Oma7 from "./game/Oma/Oma7";
-import Oma7Wait from "./game/Oma/Oma7Wait";
-import OmaFinale from "./game/Oma/OmaFinale";
+
 
 // Papa imports
 import PapaStart from "./game/Papa/PapaStart";
@@ -141,7 +125,6 @@ export const router = createHashRouter([
       { path: "admin", element: <Admin /> },
 
       // Oma mit Slugs statt /oma/1
-      { path: `oma/${START.oma}`, element: <OmaStart /> },
       { path: `papa/${START.papa}`, element: <PapaStart /> },
       { path: `soeren/${START.soeren}`, element: <SoerenStart /> },
       { path: `sina/${START.sina}`, element: <SinaStart /> },
@@ -150,22 +133,6 @@ export const router = createHashRouter([
       { path: `norman/${START.norman}`, element: <NormanStart /> },
 
 // Spielseiten:
-// Oma
-{ path: `oma/${ROUTES.oma[1].play}`, element: <Oma1 /> },
-{ path: `oma/${ROUTES.oma[1].wait}`, element: <Oma1Wait /> },
-{ path: `oma/${ROUTES.oma[2].play}`, element: <Oma2 /> },
-{ path: `oma/${ROUTES.oma[2].wait}`, element: <Oma2Wait /> },
-{ path: `oma/${ROUTES.oma[3].play}`, element: <Oma3 /> },
-{ path: `oma/${ROUTES.oma[3].wait}`, element: <Oma3Wait /> },
-{ path: `oma/${ROUTES.oma[4].play}`, element: <Oma4 /> },
-{ path: `oma/${ROUTES.oma[4].wait}`, element: <Oma4Wait /> },
-{ path: `oma/${ROUTES.oma[5].play}`, element: <Oma5 /> },
-{ path: `oma/${ROUTES.oma[5].wait}`, element: <Oma5Wait /> },
-{ path: `oma/${ROUTES.oma[6].play}`, element: <Oma6 /> },
-{ path: `oma/${ROUTES.oma[6].wait}`, element: <Oma6Wait /> },
-{ path: `oma/${ROUTES.oma[7].play}`, element: <Oma7 /> },
-{ path: `oma/${ROUTES.oma[7].wait}`, element: <Oma7Wait /> },
-{ path: `oma/${ROUTES.oma[8].play}`, element: <OmaFinale /> },
 
 
 // Papa
