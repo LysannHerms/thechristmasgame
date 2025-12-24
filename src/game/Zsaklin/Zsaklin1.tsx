@@ -1,8 +1,9 @@
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { PLAYERS } from "../../lib/players";
 import { markDone } from "../../lib/progress";
 import { go } from "../../lib/nav";
+import urImg from "../../assets/UR.png";
 
 export default function Zsaklin1() {
   const theme = PLAYERS.zsaklin;
@@ -14,7 +15,7 @@ export default function Zsaklin1() {
   const [infoOpen, setInfoOpen] = useState(SHOW_INFO);
 
   // TODO: Pfad zu deinem Bildfragment
-  const imgSrc = useMemo(() => "src/assets/UR.png", []);
+  const imgSrc = urImg;
 
   return (
         <div className="screen"  style={{

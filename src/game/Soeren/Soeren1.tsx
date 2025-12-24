@@ -1,8 +1,9 @@
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { PLAYERS } from "../../lib/players";
 import { markDone } from "../../lib/progress";
 import { go } from "../../lib/nav";
+import umImg from "../../assets/UM.png";
 
 export default function Soeren1() {
   const theme = PLAYERS.soeren;
@@ -14,7 +15,7 @@ export default function Soeren1() {
   const [infoOpen, setInfoOpen] = useState(SHOW_INFO);
 
   // TODO: Pfad zu deinem Bildfragment
-  const imgSrc = useMemo(() => "src/assets/UM.png", []);
+  const imgSrc = umImg;
 
   return (
         <div className="screen"  style={{

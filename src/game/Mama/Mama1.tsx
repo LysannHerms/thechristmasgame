@@ -1,8 +1,10 @@
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { PLAYERS } from "../../lib/players";
 import { markDone } from "../../lib/progress";
 import { go } from "../../lib/nav";
+import olImg from "../../assets/OL.png";
+
 
 export default function Mama1() {
   const theme = PLAYERS.mama;
@@ -14,7 +16,8 @@ export default function Mama1() {
   const [infoOpen, setInfoOpen] = useState(SHOW_INFO);
 
   // TODO: Pfad zu deinem Bildfragment
-  const imgSrc = useMemo(() => "src/assets/OL.png", []);
+  const imgSrc = olImg;
+
 
   return (
         <div className="screen"  style={{
