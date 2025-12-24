@@ -31,7 +31,7 @@ export default function Mama6Wait() {
       player="mama"
       step={6}
       title="Fragment 6 gesichert"
-      subtitle="Gebt den 7-stelligen Code ein (Ziffern in richtiger Schritt-Reihenfolge). Dann wartet kurz und tippt auf den Stern."
+      subtitle="Gib das zusammengesetzte Lösungswort aus den gesammelten Buchstaben ein. Dann wartet kurz und tippt auf den Stern."
       bgImgSrc={bgStars}
       starImgSrc={starImg}
       extra={
@@ -48,12 +48,15 @@ export default function Mama6Wait() {
           }}
         >
           <input
-            value={answer}
-            onChange={(e) => setAnswer(e.target.value)}
-            placeholder="7-stelliger Code…"
-            inputMode="numeric"
-            style={{ width: "100%" }}
-          />
+  value={answer}
+  onChange={(e) => setAnswer(e.target.value)}
+  placeholder="Lösungswort…"
+  autoCapitalize="characters"
+  autoCorrect="off"
+  spellCheck={false}
+  inputMode="text"
+  style={{ width: "100%" }}
+/>
           <div className="btnRow" style={{ marginTop: 10 }}>
             <button className="primary" onClick={check} style={{ width: "100%" }}>
               Prüfen
