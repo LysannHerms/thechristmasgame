@@ -63,6 +63,7 @@ export default function WaitRoom({
         border: "1px solid rgba(38, 153, 47, 0.18)",
         borderRadius: 18,
         padding: 14,
+        fontSize: 16,
         backdropFilter: "blur(6px)",
         color: "rgba(255,255,255,0.95)",
       }}

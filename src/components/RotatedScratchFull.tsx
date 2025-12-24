@@ -246,15 +246,15 @@ export default function RotatedScratchFull({
 />
 
           <canvas
-            ref={canvasRef}
-            style={{
-              position: "relative",
-              inset: 0,
-              minHeight: "50svh",
-              display: "flex",
-              pointerEvents: "none",
-            }}
-          />
+  ref={canvasRef}
+  style={{
+    position: "absolute",
+    inset: 0,
+    width: "100%",
+    height: "100%",
+    pointerEvents: "none",
+  }}
+/>
         </div>
       </div>
 

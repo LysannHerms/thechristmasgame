@@ -76,3 +76,8 @@ button:focus-visible {
   --bg-from: #111;
   --bg-to: #222;
 }
+input,
+textarea,
+select {
+  font-size: 16px;
+}
