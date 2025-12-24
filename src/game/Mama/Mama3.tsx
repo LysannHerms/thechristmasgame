@@ -19,7 +19,7 @@ export default function Mama3() {
   const canContinue = p >= 0.25;
 
   useEffect(() => {
-    // Optional: wenn du nach X% automatisch weiter willst, sag Bescheid.
+
   }, [p]);
 
   return (
