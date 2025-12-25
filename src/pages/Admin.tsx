@@ -2,7 +2,15 @@ import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { PLAYERS } from "../lib/players";
 import type { PlayerId } from "../lib/players";
-import { isDone, lockStep, markDone, resetAll, resetPlayer, unlockUpTo, type Step } from "../lib/progress";
+import {
+  isDone,
+  lockStep,
+  markDone,
+  resetAll,
+  resetPlayer,
+  unlockUpTo,
+  type Step,
+} from "../lib/progress";
 
 const PLAYER_LIST: { id: PlayerId; label: string }[] = [
   { id: "oma", label: "Oma" },
@@ -14,7 +22,7 @@ const PLAYER_LIST: { id: PlayerId; label: string }[] = [
   { id: "zsaklin", label: "Zsaklin" },
 ];
 
-const STEPS: Step[] = [1,2,3,4,5,6,7,8,9];
+const STEPS: Step[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 export default function Admin() {
   const [selected, setSelected] = useState<PlayerId>("oma");
@@ -32,15 +40,19 @@ export default function Admin() {
   }, [selected, tick]);
 
   return (
-    <div className="screen" style={
-    {
-      "--bg-from": theme.from,
-      "--bg-to": theme.to,
-    } as React.CSSProperties
-  }
->
+    <div
+      className="screen"
+      style={
+        {
+          "--bg-from": theme.from,
+          "--bg-to": theme.to,
+        } as React.CSSProperties
+      }
+    >
       <h1>Admin</h1>
-      <p>Hier kannst du einzelne Steps freischalten (ohne alles zu resetten).</p>
+      <p>
+        Hier kannst du einzelne Steps freischalten (ohne alles zu resetten).
+      </p>
 
       <div className="card">
         <h2>Person wählen</h2>
@@ -59,7 +71,7 @@ export default function Admin() {
       </div>
 
       <div className="card" style={{ marginTop: 14 }}>
-        <h2>{PLAYER_LIST.find(p => p.id === selected)?.label} – Steps</h2>
+        <h2>{PLAYER_LIST.find((p) => p.id === selected)?.label} – Steps</h2>
         <p className="small">
           Grün/aktiv heißt: Step gilt als erledigt → Guards lassen weiter.
         </p>
@@ -77,7 +89,9 @@ export default function Admin() {
                   else markDone(selected, step);
                   setTick((t) => t + 1);
                 }}
-                title={done ? "Klicken = wieder sperren" : "Klicken = freischalten"}
+                title={
+                  done ? "Klicken = wieder sperren" : "Klicken = freischalten"
+                }
               >
                 Step {step} {done ? "✓" : ""}
               </button>
@@ -135,12 +149,15 @@ export default function Admin() {
             Reset ALLES
           </button>
 
-          <Link to="/"><button>Zurück zur Startseite</button></Link>
+          <Link to="/">
+            <button>Zurück zur Startseite</button>
+          </Link>
         </div>
 
         <p className="small">
-          Hinweis: Das wirkt nur auf <b>diesem Gerät</b>. Wenn jemand auf seinem Handy hängt,
-          musst du das auf <b>seinem</b> Gerät öffnen (oder du spielst auf einem gemeinsamen Handy).
+          Hinweis: Das wirkt nur auf <b>diesem Gerät</b>. Wenn jemand auf seinem
+          Handy hängt, musst du das auf <b>seinem</b> Gerät öffnen (oder du
+          spielst auf einem gemeinsamen Handy).
         </p>
       </div>
     </div>

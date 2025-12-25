@@ -102,7 +102,6 @@ export const ROUTES: Record<PlayerId, Record<Step, Record<Mode, string>>> = {
   },
 };
 
-
 export function pathFor(player: PlayerId, step: Step, mode: Mode = "play") {
   return `/${player}/${ROUTES[player][step][mode]}`;
 }

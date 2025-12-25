@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { PLAYERS } from "../../lib/players";
 import { markDone } from "../../lib/progress";
 import { go } from "../../lib/nav";
-import orImg from "../../assets/OR.png";
+import ulImg from "../../assets/UL.png";
 
 export default function Sina1() {
   const theme = PLAYERS.sina;
@@ -15,13 +15,17 @@ export default function Sina1() {
   const [infoOpen, setInfoOpen] = useState(SHOW_INFO);
 
   // TODO: Pfad zu deinem Bildfragment
-  const imgSrc = orImg;
+  const imgSrc = ulImg;
   return (
-        <div className="screen"  style={{
-    "--bg-from": theme.from,
-    "--bg-to": theme.to,
-  } as React.CSSProperties}
->
+    <div
+      className="screen"
+      style={
+        {
+          "--bg-from": theme.from,
+          "--bg-to": theme.to,
+        } as React.CSSProperties
+      }
+    >
       {/* Fullscreen Bildfläche */}
       <div
         style={{
@@ -57,7 +61,13 @@ export default function Sina1() {
               backdropFilter: "blur(6px)",
             }}
           >
-            <div style={{ display: "flex", justifyContent: "space-between", gap: 12 }}>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                gap: 12,
+              }}
+            >
               <div style={{ lineHeight: 1.3 }}>
                 <div style={{ fontWeight: 700, marginBottom: 6 }}>
                   {theme.label} • Fragment 1
@@ -120,19 +130,19 @@ export default function Sina1() {
               markDone("sina", 1);
               nav(go("sina", 1, "wait"));
             }}
-           style={{
-    background: "#ffffff",          // NICHT transparent
-    color: "#000000",
-    border: "none",
-    borderRadius: 999,
-    padding: "14px 18px",
-    fontSize: 16,
-    fontWeight: 600,
-    minHeight: 48,                  // mobile tap size
-    zIndex: 10,                     // WICHTIG
-    boxShadow: "0 6px 20px rgba(0,0,0,0.35)",
-    cursor: "pointer",
-  }}
+            style={{
+              background: "#ffffff", // NICHT transparent
+              color: "#000000",
+              border: "none",
+              borderRadius: 999,
+              padding: "14px 18px",
+              fontSize: 16,
+              fontWeight: 600,
+              minHeight: 48, // mobile tap size
+              zIndex: 10, // WICHTIG
+              boxShadow: "0 6px 20px rgba(0,0,0,0.35)",
+              cursor: "pointer",
+            }}
           >
             Weiter
           </button>

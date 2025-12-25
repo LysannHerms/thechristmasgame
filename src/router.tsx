@@ -4,8 +4,6 @@ import Index from "./pages/Index";
 import Admin from "./pages/Admin";
 import { START, ROUTES } from "./lib/routes";
 
-
-
 // Papa imports
 import PapaStart from "./game/Papa/PapaStart";
 import Papa1 from "./game/Papa/Papa1";
@@ -62,7 +60,7 @@ import SinaFinale from "./game/Sina/SinaFinale";
 
 // Zsaklin imports
 import ZsaklinStart from "./game/Zsaklin/ZsaklinStart";
-import Zsaklin1Wait from "./game/Zsaklin/Zsaklin1Wait"; 
+import Zsaklin1Wait from "./game/Zsaklin/Zsaklin1Wait";
 import Zsaklin1 from "./game/Zsaklin/Zsaklin1";
 import Zsaklin2 from "./game/Zsaklin/Zsaklin2";
 import Zsaklin2Wait from "./game/Zsaklin/Zsaklin2Wait";
@@ -114,8 +112,6 @@ import Norman7 from "./game/Norman/Norman7";
 import Norman7Wait from "./game/Norman/Norman7Wait";
 import NormanFinale from "./game/Norman/NormanFinale";
 
-
-
 export const router = createHashRouter([
   {
     path: "/",
@@ -132,111 +128,109 @@ export const router = createHashRouter([
       { path: `mama/${START.mama}`, element: <MamaStart /> },
       { path: `norman/${START.norman}`, element: <NormanStart /> },
 
-// Spielseiten:
+      // Spielseiten:
 
+      // Papa
+      { path: `papa/${ROUTES.papa[1].play}`, element: <Papa1 /> },
+      { path: `papa/${ROUTES.papa[1].wait}`, element: <Papa1Wait /> },
+      { path: `papa/${ROUTES.papa[2].play}`, element: <Papa2 /> },
+      { path: `papa/${ROUTES.papa[2].wait}`, element: <Papa2Wait /> },
+      { path: `papa/${ROUTES.papa[3].play}`, element: <Papa3 /> },
+      { path: `papa/${ROUTES.papa[3].wait}`, element: <Papa3Wait /> },
+      { path: `papa/${ROUTES.papa[4].play}`, element: <Papa4 /> },
+      { path: `papa/${ROUTES.papa[4].wait}`, element: <Papa4Wait /> },
+      { path: `papa/${ROUTES.papa[5].play}`, element: <Papa5 /> },
+      { path: `papa/${ROUTES.papa[5].wait}`, element: <Papa5Wait /> },
+      { path: `papa/${ROUTES.papa[6].play}`, element: <Papa6 /> },
+      { path: `papa/${ROUTES.papa[6].wait}`, element: <Papa6Wait /> },
+      { path: `papa/${ROUTES.papa[7].play}`, element: <Papa7 /> },
+      { path: `papa/${ROUTES.papa[7].wait}`, element: <Papa7Wait /> },
+      { path: `papa/${ROUTES.papa[8].play}`, element: <PapaFinale /> },
 
-// Papa
-{ path: `papa/${ROUTES.papa[1].play}`, element: <Papa1 /> },
-{ path: `papa/${ROUTES.papa[1].wait}`, element: <Papa1Wait /> },
-{ path: `papa/${ROUTES.papa[2].play}`, element: <Papa2 /> },
-{ path: `papa/${ROUTES.papa[2].wait}`, element: <Papa2Wait /> },
-{ path: `papa/${ROUTES.papa[3].play}`, element: <Papa3 /> },
-{ path: `papa/${ROUTES.papa[3].wait}`, element: <Papa3Wait /> },
-{ path: `papa/${ROUTES.papa[4].play}`, element: <Papa4 /> },
-{ path: `papa/${ROUTES.papa[4].wait}`, element: <Papa4Wait /> },
-{ path: `papa/${ROUTES.papa[5].play}`, element: <Papa5 /> },
-{ path: `papa/${ROUTES.papa[5].wait}`, element: <Papa5Wait /> },
-{ path: `papa/${ROUTES.papa[6].play}`, element: <Papa6 /> },
-{ path: `papa/${ROUTES.papa[6].wait}`, element: <Papa6Wait /> },
-{ path: `papa/${ROUTES.papa[7].play}`, element: <Papa7 /> },
-{ path: `papa/${ROUTES.papa[7].wait}`, element: <Papa7Wait /> },
-{ path: `papa/${ROUTES.papa[8].play}`, element: <PapaFinale /> },
+      // Soeren
+      { path: `soeren/${ROUTES.soeren[1].play}`, element: <Soeren1 /> },
+      { path: `soeren/${ROUTES.soeren[1].wait}`, element: <Soeren1Wait /> },
+      { path: `soeren/${ROUTES.soeren[2].play}`, element: <Soeren2 /> },
+      { path: `soeren/${ROUTES.soeren[2].wait}`, element: <Soeren2Wait /> },
+      { path: `soeren/${ROUTES.soeren[3].play}`, element: <Soeren3 /> },
+      { path: `soeren/${ROUTES.soeren[3].wait}`, element: <Soeren3Wait /> },
+      { path: `soeren/${ROUTES.soeren[4].play}`, element: <Soeren4 /> },
+      { path: `soeren/${ROUTES.soeren[4].wait}`, element: <Soeren4Wait /> },
+      { path: `soeren/${ROUTES.soeren[5].play}`, element: <Soeren5 /> },
+      { path: `soeren/${ROUTES.soeren[5].wait}`, element: <Soeren5Wait /> },
+      { path: `soeren/${ROUTES.soeren[6].play}`, element: <Soeren6 /> },
+      { path: `soeren/${ROUTES.soeren[6].wait}`, element: <Soeren6Wait /> },
+      { path: `soeren/${ROUTES.soeren[7].play}`, element: <Soeren7 /> },
+      { path: `soeren/${ROUTES.soeren[7].wait}`, element: <Soeren7Wait /> },
+      { path: `soeren/${ROUTES.soeren[8].play}`, element: <SoerenFinale /> },
 
-// Soeren
-{ path: `soeren/${ROUTES.soeren[1].play}`, element: <Soeren1 /> },
-{ path: `soeren/${ROUTES.soeren[1].wait}`, element: <Soeren1Wait /> },
-{ path: `soeren/${ROUTES.soeren[2].play}`, element: <Soeren2 /> },
-{ path: `soeren/${ROUTES.soeren[2].wait}`, element: <Soeren2Wait /> },
-{ path: `soeren/${ROUTES.soeren[3].play}`, element: <Soeren3 /> },
-{ path: `soeren/${ROUTES.soeren[3].wait}`, element: <Soeren3Wait /> },
-{ path: `soeren/${ROUTES.soeren[4].play}`, element: <Soeren4 /> },
-{ path: `soeren/${ROUTES.soeren[4].wait}`, element: <Soeren4Wait /> },
-{ path: `soeren/${ROUTES.soeren[5].play}`, element: <Soeren5 /> },
-{ path: `soeren/${ROUTES.soeren[5].wait}`, element: <Soeren5Wait /> },
-{ path: `soeren/${ROUTES.soeren[6].play}`, element: <Soeren6 /> },
-{ path: `soeren/${ROUTES.soeren[6].wait}`, element: <Soeren6Wait /> },
-{ path: `soeren/${ROUTES.soeren[7].play}`, element: <Soeren7 /> },
-{ path: `soeren/${ROUTES.soeren[7].wait}`, element: <Soeren7Wait /> },
-{ path: `soeren/${ROUTES.soeren[8].play}`, element: <SoerenFinale /> },
+      // Sina
+      { path: `sina/${ROUTES.sina[1].play}`, element: <Sina1 /> },
+      { path: `sina/${ROUTES.sina[1].wait}`, element: <Sina1Wait /> },
+      { path: `sina/${ROUTES.sina[2].play}`, element: <Sina2 /> },
+      { path: `sina/${ROUTES.sina[2].wait}`, element: <Sina2Wait /> },
+      { path: `sina/${ROUTES.sina[3].play}`, element: <Sina3 /> },
+      { path: `sina/${ROUTES.sina[3].wait}`, element: <Sina3Wait /> },
+      { path: `sina/${ROUTES.sina[4].play}`, element: <Sina4 /> },
+      { path: `sina/${ROUTES.sina[4].wait}`, element: <Sina4Wait /> },
+      { path: `sina/${ROUTES.sina[5].play}`, element: <Sina5 /> },
+      { path: `sina/${ROUTES.sina[5].wait}`, element: <Sina5Wait /> },
+      { path: `sina/${ROUTES.sina[6].play}`, element: <Sina6 /> },
+      { path: `sina/${ROUTES.sina[6].wait}`, element: <Sina6Wait /> },
+      { path: `sina/${ROUTES.sina[7].play}`, element: <Sina7 /> },
+      { path: `sina/${ROUTES.sina[7].wait}`, element: <Sina7Wait /> },
+      { path: `sina/${ROUTES.sina[8].play}`, element: <SinaFinale /> },
 
-// Sina
-{ path: `sina/${ROUTES.sina[1].play}`, element: <Sina1 /> },
-{ path: `sina/${ROUTES.sina[1].wait}`, element: <Sina1Wait /> },
-{ path: `sina/${ROUTES.sina[2].play}`, element: <Sina2 /> },
-{ path: `sina/${ROUTES.sina[2].wait}`, element: <Sina2Wait /> },
-{ path: `sina/${ROUTES.sina[3].play}`, element: <Sina3 /> },
-{ path: `sina/${ROUTES.sina[3].wait}`, element: <Sina3Wait /> },
-{ path: `sina/${ROUTES.sina[4].play}`, element: <Sina4 /> },
-{ path: `sina/${ROUTES.sina[4].wait}`, element: <Sina4Wait /> },
-{ path: `sina/${ROUTES.sina[5].play}`, element: <Sina5 /> },
-{ path: `sina/${ROUTES.sina[5].wait}`, element: <Sina5Wait /> },
-{ path: `sina/${ROUTES.sina[6].play}`, element: <Sina6 /> },
-{ path: `sina/${ROUTES.sina[6].wait}`, element: <Sina6Wait /> },
-{ path: `sina/${ROUTES.sina[7].play}`, element: <Sina7 /> },
-{ path: `sina/${ROUTES.sina[7].wait}`, element: <Sina7Wait /> },
-{ path: `sina/${ROUTES.sina[8].play}`, element: <SinaFinale /> },
+      // Zsaklin
+      { path: `zsaklin/${ROUTES.zsaklin[1].play}`, element: <Zsaklin1 /> },
+      { path: `zsaklin/${ROUTES.zsaklin[1].wait}`, element: <Zsaklin1Wait /> },
+      { path: `zsaklin/${ROUTES.zsaklin[2].play}`, element: <Zsaklin2 /> },
+      { path: `zsaklin/${ROUTES.zsaklin[2].wait}`, element: <Zsaklin2Wait /> },
+      { path: `zsaklin/${ROUTES.zsaklin[3].play}`, element: <Zsaklin3 /> },
+      { path: `zsaklin/${ROUTES.zsaklin[3].wait}`, element: <Zsaklin3Wait /> },
+      { path: `zsaklin/${ROUTES.zsaklin[4].play}`, element: <Zsaklin4 /> },
+      { path: `zsaklin/${ROUTES.zsaklin[4].wait}`, element: <Zsaklin4Wait /> },
+      { path: `zsaklin/${ROUTES.zsaklin[5].play}`, element: <Zsaklin5 /> },
+      { path: `zsaklin/${ROUTES.zsaklin[5].wait}`, element: <Zsaklin5Wait /> },
+      { path: `zsaklin/${ROUTES.zsaklin[6].play}`, element: <Zsaklin6 /> },
+      { path: `zsaklin/${ROUTES.zsaklin[6].wait}`, element: <Zsaklin6Wait /> },
+      { path: `zsaklin/${ROUTES.zsaklin[7].play}`, element: <Zsaklin7 /> },
+      { path: `zsaklin/${ROUTES.zsaklin[7].wait}`, element: <Zsaklin7Wait /> },
+      { path: `zsaklin/${ROUTES.zsaklin[8].play}`, element: <ZsaklinFinale /> },
 
-// Zsaklin
-{ path: `zsaklin/${ROUTES.zsaklin[1].play}`, element: <Zsaklin1 /> },
-{ path: `zsaklin/${ROUTES.zsaklin[1].wait}`, element: <Zsaklin1Wait /> },
-{ path: `zsaklin/${ROUTES.zsaklin[2].play}`, element: <Zsaklin2 /> },
-{ path: `zsaklin/${ROUTES.zsaklin[2].wait}`, element: <Zsaklin2Wait /> },
-{ path: `zsaklin/${ROUTES.zsaklin[3].play}`, element: <Zsaklin3 /> },
-{ path: `zsaklin/${ROUTES.zsaklin[3].wait}`, element: <Zsaklin3Wait /> },
-{ path: `zsaklin/${ROUTES.zsaklin[4].play}`, element: <Zsaklin4 /> },
-{ path: `zsaklin/${ROUTES.zsaklin[4].wait}`, element: <Zsaklin4Wait /> },
-{ path: `zsaklin/${ROUTES.zsaklin[5].play}`, element: <Zsaklin5 /> },
-{ path: `zsaklin/${ROUTES.zsaklin[5].wait}`, element: <Zsaklin5Wait /> },
-{ path: `zsaklin/${ROUTES.zsaklin[6].play}`, element: <Zsaklin6 /> },
-{ path: `zsaklin/${ROUTES.zsaklin[6].wait}`, element: <Zsaklin6Wait /> },
-{ path: `zsaklin/${ROUTES.zsaklin[7].play}`, element: <Zsaklin7 /> },
-{ path: `zsaklin/${ROUTES.zsaklin[7].wait}`, element: <Zsaklin7Wait /> },
-{ path: `zsaklin/${ROUTES.zsaklin[8].play}`, element: <ZsaklinFinale /> },
+      // Maman
+      { path: `mama/${ROUTES.mama[1].play}`, element: <Mama1 /> },
+      { path: `mama/${ROUTES.mama[1].wait}`, element: <Mama1Wait /> },
+      { path: `mama/${ROUTES.mama[2].play}`, element: <Mama2 /> },
+      { path: `mama/${ROUTES.mama[2].wait}`, element: <Mama2Wait /> },
+      { path: `mama/${ROUTES.mama[3].play}`, element: <Mama3 /> },
+      { path: `mama/${ROUTES.mama[3].wait}`, element: <Mama3Wait /> },
+      { path: `mama/${ROUTES.mama[4].play}`, element: <Mama4 /> },
+      { path: `mama/${ROUTES.mama[4].wait}`, element: <Mama4Wait /> },
+      { path: `mama/${ROUTES.mama[5].play}`, element: <Mama5 /> },
+      { path: `mama/${ROUTES.mama[5].wait}`, element: <Mama5Wait /> },
+      { path: `mama/${ROUTES.mama[6].play}`, element: <Mama6 /> },
+      { path: `mama/${ROUTES.mama[6].wait}`, element: <Mama6Wait /> },
+      { path: `mama/${ROUTES.mama[7].play}`, element: <Mama7 /> },
+      { path: `mama/${ROUTES.mama[7].wait}`, element: <Mama7Wait /> },
+      { path: `mama/${ROUTES.mama[8].play}`, element: <MamaFinale /> },
 
-// Maman
-{ path: `mama/${ROUTES.mama[1].play}`, element: <Mama1 /> },
-{ path: `mama/${ROUTES.mama[1].wait}`, element: <Mama1Wait /> },
-{ path: `mama/${ROUTES.mama[2].play}`, element: <Mama2 /> },
-{ path: `mama/${ROUTES.mama[2].wait}`, element: <Mama2Wait /> },
-{ path: `mama/${ROUTES.mama[3].play}`, element: <Mama3 /> },
-{ path: `mama/${ROUTES.mama[3].wait}`, element: <Mama3Wait /> },
-{ path: `mama/${ROUTES.mama[4].play}`, element: <Mama4 /> },
-{ path: `mama/${ROUTES.mama[4].wait}`, element: <Mama4Wait /> },
-{ path: `mama/${ROUTES.mama[5].play}`, element: <Mama5 /> },
-{ path: `mama/${ROUTES.mama[5].wait}`, element: <Mama5Wait /> },
-{ path: `mama/${ROUTES.mama[6].play}`, element: <Mama6 /> },
-{ path: `mama/${ROUTES.mama[6].wait}`, element: <Mama6Wait /> },
-{ path: `mama/${ROUTES.mama[7].play}`, element: <Mama7 /> },
-{ path: `mama/${ROUTES.mama[7].wait}`, element: <Mama7Wait /> },
-{ path: `mama/${ROUTES.mama[8].play}`, element: <MamaFinale /> },
-
-// Norman
-{ path: `norman/${ROUTES.norman[1].play}`, element: <Norman1 /> },
-{ path: `norman/${ROUTES.norman[1].wait}`, element: <Norman1Wait /> },
-{ path: `norman/${ROUTES.norman[2].play}`, element: <Norman2 /> },
-{ path: `norman/${ROUTES.norman[2].wait}`, element: <Norman2Wait /> },
-{ path: `norman/${ROUTES.norman[3].play}`, element: <Norman3 /> },
-{ path: `norman/${ROUTES.norman[3].wait}`, element: <Norman3Wait /> },
-{ path: `norman/${ROUTES.norman[4].play}`, element: <Norman4 /> },
-{ path: `norman/${ROUTES.norman[4].wait}`, element: <Norman4Wait /> },
-{ path: `norman/${ROUTES.norman[5].play}`, element: <Norman5 /> },
-{ path: `norman/${ROUTES.norman[5].wait}`, element: <Norman5Wait /> },
-{ path: `norman/${ROUTES.norman[6].play}`, element: <Norman6 /> },
-{ path: `norman/${ROUTES.norman[6].wait}`, element: <Norman6Wait /> },
-{ path: `norman/${ROUTES.norman[7].play}`, element: <Norman7 /> },
-{ path: `norman/${ROUTES.norman[7].wait}`, element: <Norman7Wait /> },
-{ path: `norman/${ROUTES.norman[8].play}`, element: <NormanFinale /> },
-
+      // Norman
+      { path: `norman/${ROUTES.norman[1].play}`, element: <Norman1 /> },
+      { path: `norman/${ROUTES.norman[1].wait}`, element: <Norman1Wait /> },
+      { path: `norman/${ROUTES.norman[2].play}`, element: <Norman2 /> },
+      { path: `norman/${ROUTES.norman[2].wait}`, element: <Norman2Wait /> },
+      { path: `norman/${ROUTES.norman[3].play}`, element: <Norman3 /> },
+      { path: `norman/${ROUTES.norman[3].wait}`, element: <Norman3Wait /> },
+      { path: `norman/${ROUTES.norman[4].play}`, element: <Norman4 /> },
+      { path: `norman/${ROUTES.norman[4].wait}`, element: <Norman4Wait /> },
+      { path: `norman/${ROUTES.norman[5].play}`, element: <Norman5 /> },
+      { path: `norman/${ROUTES.norman[5].wait}`, element: <Norman5Wait /> },
+      { path: `norman/${ROUTES.norman[6].play}`, element: <Norman6 /> },
+      { path: `norman/${ROUTES.norman[6].wait}`, element: <Norman6Wait /> },
+      { path: `norman/${ROUTES.norman[7].play}`, element: <Norman7 /> },
+      { path: `norman/${ROUTES.norman[7].wait}`, element: <Norman7Wait /> },
+      { path: `norman/${ROUTES.norman[8].play}`, element: <NormanFinale /> },
     ],
   },
 ]);

@@ -25,12 +25,12 @@ export default function Soeren3() {
   return (
     <>
       <RotatedScratchFull
-  hiddenImgSrc={hiddenImg}
-  coverImgSrc={bgStars}
-  brushSize={20}
-  storageKey="scratch:soeren:3"
-  onProgress={setP}
-/>
+        hiddenImgSrc={hiddenImg}
+        coverImgSrc={bgStars}
+        brushSize={20}
+        storageKey="scratch:soeren:3"
+        onProgress={setP}
+      />
 
       {/* super minimaler Weiter-Button */}
       <button
@@ -39,20 +39,22 @@ export default function Soeren3() {
           markDone("soeren", 3);
           nav(go("soeren", 3, "wait"));
         }}
-         style={{
-    position: "fixed",
-    left: 12,
-    right: 12,
-    bottom: "calc(12px + env(safe-area-inset-bottom))",
-    padding: "14px 16px",
-    borderRadius: 14,
-    border: "1px solid rgba(255,255,255,0.22)",
-    background: canContinue ? "rgba(255,255,255,0.18)" : "rgba(255,255,255,0.08)",
-    color: "white",
-    fontSize: 16,
-    zIndex: 9999,
-    opacity: canContinue ? 1 : 0.6,
-  }}
+        style={{
+          position: "fixed",
+          left: 12,
+          right: 12,
+          bottom: "calc(12px + env(safe-area-inset-bottom))",
+          padding: "14px 16px",
+          borderRadius: 14,
+          border: "1px solid rgba(255,255,255,0.22)",
+          background: canContinue
+            ? "rgba(255,255,255,0.18)"
+            : "rgba(255,255,255,0.08)",
+          color: "white",
+          fontSize: 16,
+          zIndex: 9999,
+          opacity: canContinue ? 1 : 0.6,
+        }}
       >
         Weiter
       </button>

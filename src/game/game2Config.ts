@@ -56,7 +56,8 @@ export const GAME2: Record<PlayerId, Game2Config> = {
     questions: [
       {
         id: "q",
-        prompt: "Kaukasische Flügelnuss: Wie viele Blätter trägt ein gefiederter Stiel?",
+        prompt:
+          "Kaukasische Flügelnuss: Wie viele Blätter trägt ein gefiederter Stiel?",
         hint: "Antwort ist ein Bereich.",
         rule: { kind: "range", min: 7, max: 27 },
         reward: { letter: "D" },
@@ -73,7 +74,7 @@ export const GAME2: Record<PlayerId, Game2Config> = {
         prompt: "Was sind die Postleitzahlen von Wanzer und Karstädt?",
         hint: "Berechne die Summe beider Quersumme der PLZ ",
         rule: { kind: "exact", value: 49 },
-        reward: { letter: "O"},
+        reward: { letter: "O" },
       },
     ],
   },
@@ -84,10 +85,11 @@ export const GAME2: Record<PlayerId, Game2Config> = {
     questions: [
       {
         id: "q",
-        prompt: "Welchen gesetzlichen Feiertag hat Sachsen-Anhalt, den Brandenburg nicht hat?",
+        prompt:
+          "Welchen gesetzlichen Feiertag hat Sachsen-Anhalt, den Brandenburg nicht hat?",
         hint: "Addiere Monat und Tag des Feiertags.",
         rule: { kind: "exact", value: 7 },
-        reward: { letter: "L"},
+        reward: { letter: "L" },
       },
     ],
   },
@@ -98,7 +100,8 @@ export const GAME2: Record<PlayerId, Game2Config> = {
     questions: [
       {
         id: "q",
-        prompt: "Telefonvorwahl Ungarn + längster Fluss in Ungarn durchs Land (597km)",
+        prompt:
+          "Telefonvorwahl Ungarn + längster Fluss in Ungarn durchs Land (597km)",
         hint: "Addiere beide Zahlen.",
         rule: { kind: "exact", value: 633 },
         reward: { letter: "F" },
@@ -112,11 +115,11 @@ export const GAME2: Record<PlayerId, Game2Config> = {
     questions: [
       {
         id: "q",
-        prompt: "Wann ist die Geschichte „Der Hase und der Igel“ erschienen? (Jahr)",
+        prompt:
+          "Wann ist die Geschichte „Der Hase und der Igel“ erschienen? (Jahr)",
         rule: { kind: "range", min: 1830, max: 1850 },
         reward: { letter: "U" },
       },
     ],
   },
 };
-

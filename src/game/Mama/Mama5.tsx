@@ -23,7 +23,7 @@ export default function Mama5() {
       title="Fragment 5 – Die Geschichte"
       story={story}
       onContinue={() => {
-        markDone("mama", 5);            // ✅ DAS war der fehlende Schritt
+        markDone("mama", 5); // ✅ DAS war der fehlende Schritt
         nav(go("mama", 5, "wait"));
       }}
     />

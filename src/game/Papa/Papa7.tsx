@@ -21,7 +21,7 @@ export default function Papa7() {
       target={{
         name: "New York",
         lat: 40.7128,
-        lng: -74.0060,
+        lng: -74.006,
         radiusMeters: 60000, // 60km: fair auf Handy
       }}
       initialCenter={[52.52, 13.405]} // Berlin

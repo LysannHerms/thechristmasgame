@@ -13,7 +13,9 @@ export default function Sina3Wait() {
   function check() {
     const cleaned = answer.trim().toUpperCase();
     if (!cleaned) {
-      setError("Setzt die gefundenen Zahlen und Symbole in der richtigen Reihenfolge zusammen.");
+      setError(
+        "Setzt die gefundenen Zahlen und Symbole in der richtigen Reihenfolge zusammen."
+      );
       setOk(false);
       return;
     }
@@ -54,19 +56,29 @@ export default function Sina3Wait() {
             style={{ width: "100%" }}
           />
           <div className="btnRow" style={{ marginTop: 10 }}>
-            <button className="primary" onClick={check} style={{ width: "100%" }}>
+            <button
+              className="primary"
+              onClick={check}
+              style={{ width: "100%" }}
+            >
               Prüfen
             </button>
           </div>
 
           {error && (
-            <p className="small" style={{ marginTop: 10, color: "rgba(255,80,80,0.95)" }}>
+            <p
+              className="small"
+              style={{ marginTop: 10, color: "rgba(255,80,80,0.95)" }}
+            >
               {error}
             </p>
           )}
 
           {ok && (
-            <p className="small" style={{ marginTop: 10, color: "rgba(174, 235, 155, 0.95)" }}>
+            <p
+              className="small"
+              style={{ marginTop: 10, color: "rgba(174, 235, 155, 0.95)" }}
+            >
               Richtig ✅
             </p>
           )}

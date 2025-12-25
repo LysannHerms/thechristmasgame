@@ -5,10 +5,10 @@ type Props = {
   player: PlayerId;
   title: string;
   instructions?: string;
-  stepLabel: string;      // z.B. "Dein Schritt"
-  stepText: string;       // z.B. "Lege das Geschenk mittig aufs Papier."
-  digitLabel?: string;    // z.B. "Deine Ziffer"
-  digit: string;          // z.B. "4"
+  stepLabel: string; // z.B. "Dein Schritt"
+  stepText: string; // z.B. "Lege das Geschenk mittig aufs Papier."
+  digitLabel?: string; // z.B. "Deine Ziffer"
+  digit: string; // z.B. "4"
   onContinue: () => void; // nav(go(player, 6, "wait"))
 };
 
@@ -46,7 +46,14 @@ export default function GiftWrapStep({
             background: "rgba(0,0,0,0.18)",
           }}
         >
-          <div style={{ fontSize: 44, lineHeight: 1, marginBottom: 10, textAlign: "center" }}>
+          <div
+            style={{
+              fontSize: 44,
+              lineHeight: 1,
+              marginBottom: 10,
+              textAlign: "center",
+            }}
+          >
             ✶
           </div>
 
@@ -86,7 +93,10 @@ export default function GiftWrapStep({
           ✶ Weiter
         </button>
 
-        <p className="small" style={{ marginTop: 10, opacity: 0.85, textAlign: "center" }}>
+        <p
+          className="small"
+          style={{ marginTop: 10, opacity: 0.85, textAlign: "center" }}
+        >
           Lösungswort = Buchstaben in richtiger Reihenfolge der Schritte.
         </p>
       </div>

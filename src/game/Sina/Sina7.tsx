@@ -21,7 +21,7 @@ export default function Sina7() {
       target={{
         name: "Stockholm",
         lat: 59.3293,
-        lng: 18.0680,
+        lng: 18.068,
         radiusMeters: 60000, // 60km: fair auf Handy
       }}
       initialCenter={[52.52, 13.405]} // Berlin

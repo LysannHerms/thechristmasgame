@@ -17,7 +17,7 @@ export default function Zsaklin7() {
     <CityHuntStep
       player="zsaklin"
       title="Finale – finde die gesuchte Stadt"
-      prompt="In welcher Hauptstadt im Norden gibt es zur Weihnachtszeit besonders kurze Tage, viel Dunkelheit – und überall Kerzen und Lichter?"
+      prompt="In welcher Stadt gibt es zur Weihnachtszeit festlich geschmückte Boulevards wie die Champs-Élysées und große Weihnachtsmärkte entlang der Seine?"
       target={{
         name: "Paris",
         lat: 48.8566,

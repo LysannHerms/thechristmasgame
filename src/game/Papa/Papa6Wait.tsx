@@ -48,29 +48,39 @@ export default function Papa6Wait() {
           }}
         >
           <input
-  value={answer}
-  onChange={(e) => setAnswer(e.target.value)}
-  placeholder="Lösungswort…"
-  autoCapitalize="characters"
-  autoCorrect="off"
-  spellCheck={false}
-  inputMode="text"
-  style={{ width: "100%" }}
-/>
+            value={answer}
+            onChange={(e) => setAnswer(e.target.value)}
+            placeholder="Lösungswort…"
+            autoCapitalize="characters"
+            autoCorrect="off"
+            spellCheck={false}
+            inputMode="text"
+            style={{ width: "100%" }}
+          />
           <div className="btnRow" style={{ marginTop: 10 }}>
-            <button className="primary" onClick={check} style={{ width: "100%" }}>
+            <button
+              className="primary"
+              onClick={check}
+              style={{ width: "100%" }}
+            >
               Prüfen
             </button>
           </div>
 
           {error && (
-            <p className="small" style={{ marginTop: 10, color: "rgba(255,80,80,0.95)" }}>
+            <p
+              className="small"
+              style={{ marginTop: 10, color: "rgba(255,80,80,0.95)" }}
+            >
               {error}
             </p>
           )}
 
           {ok && (
-            <p className="small" style={{ marginTop: 10, color: "rgba(174, 235, 155, 0.95)" }}>
+            <p
+              className="small"
+              style={{ marginTop: 10, color: "rgba(174, 235, 155, 0.95)" }}
+            >
               Richtig ✅
             </p>
           )}

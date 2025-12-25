@@ -22,11 +22,11 @@ export default function StarConfetti({ starSrc, count = 60 }: Props) {
       arr.push({
         id: i,
         leftPct: Math.random() * 100,
-        sizePx: 10 + Math.random() * 16,         // 10–26px
-        duration: 6 + Math.random() * 6,         // 6–12s
-        delay: Math.random() * 4,                // 0–4s
-        driftPx: 20 + Math.random() * 80,        // 20–100px
-        opacity: 0.35 + Math.random() * 0.45,    // 0.35–0.8
+        sizePx: 10 + Math.random() * 16, // 10–26px
+        duration: 6 + Math.random() * 6, // 6–12s
+        delay: Math.random() * 4, // 0–4s
+        driftPx: 20 + Math.random() * 80, // 20–100px
+        opacity: 0.35 + Math.random() * 0.45, // 0.35–0.8
       });
     }
     return arr;

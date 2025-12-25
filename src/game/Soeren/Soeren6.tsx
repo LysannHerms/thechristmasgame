@@ -18,7 +18,7 @@ export default function Soeren6() {
       title="Fragment 6 – Geschenkpapier-Chaos"
       stepLabel="Dein Schritt"
       stepText="Roll das Geschenkpapier aus und glätte es."
-      digit="T"
+      digit="S"
       onContinue={() => {
         // wichtig: damit du in den WaitRoom darfst
         markDone("soeren", 6);

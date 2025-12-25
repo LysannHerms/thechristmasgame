@@ -23,7 +23,7 @@ export default function Norman5() {
       title="Fragment 5 – Die Geschichte"
       story={story}
       onContinue={() => {
-        markDone("norman", 5);            // ✅ DAS war der fehlende Schritt
+        markDone("norman", 5); // ✅ DAS war der fehlende Schritt
         nav(go("norman", 5, "wait"));
       }}
     />

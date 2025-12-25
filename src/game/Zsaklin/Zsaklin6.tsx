@@ -18,7 +18,7 @@ export default function Zsaklin6() {
       title="Fragment 6 – Geschenkpapier-Chaos"
       stepLabel="Dein Schritt"
       stepText="Leg das Geschenk mittig aufs Papier."
-      digit="S"
+      digit="T"
       onContinue={() => {
         // wichtig: damit du in den WaitRoom darfst
         markDone("zsaklin", 6);

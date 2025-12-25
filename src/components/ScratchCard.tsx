@@ -2,10 +2,10 @@
 import { useEffect, useRef, useState } from "react";
 
 type Props = {
-  hiddenImgSrc: string;   // Bild, das darunter sichtbar wird
-  coverImgSrc: string;    // Bild, das weggerubbelt wird (z.B. Sternenbild)
-  brushSize?: number;     // Rubbel-Radius
-  storageKey?: string;    // z.B. "scratch:oma:3" (damit Reload nicht resetet)
+  hiddenImgSrc: string; // Bild, das darunter sichtbar wird
+  coverImgSrc: string; // Bild, das weggerubbelt wird (z.B. Sternenbild)
+  brushSize?: number; // Rubbel-Radius
+  storageKey?: string; // z.B. "scratch:oma:3" (damit Reload nicht resetet)
   onProgress?: (p: number) => void; // 0..1
 };
 

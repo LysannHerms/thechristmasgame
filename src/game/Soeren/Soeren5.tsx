@@ -23,7 +23,7 @@ export default function Soeren5() {
       title="Fragment 5 – Die Geschichte"
       story={story}
       onContinue={() => {
-        markDone("soeren", 5);            // ✅ DAS war der fehlende Schritt
+        markDone("soeren", 5); // ✅ DAS war der fehlende Schritt
         nav(go("soeren", 5, "wait"));
       }}
     />

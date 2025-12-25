@@ -53,18 +53,18 @@ export default function SoerenFinale() {
           }}
         >
           <img
-  src={starImg}
-  alt=""
-  style={{
-    width: 56,
-    height: 56,
-    marginBottom: 12,
-    animation: "pulse 3s ease-in-out infinite",
-    filter: "drop-shadow(0 0 12px rgba(255, 235, 120, 0.7))",
-  }}
-/>
+            src={starImg}
+            alt=""
+            style={{
+              width: 56,
+              height: 56,
+              marginBottom: 12,
+              animation: "pulse 3s ease-in-out infinite",
+              filter: "drop-shadow(0 0 12px rgba(255, 235, 120, 0.7))",
+            }}
+          />
 
-<style>{`
+          <style>{`
   @keyframes pulse {
     0%, 100% { transform: scale(1); opacity: 0.95; }
     50% { transform: scale(1.06); opacity: 1; }
@@ -88,9 +88,13 @@ export default function SoerenFinale() {
             }}
           />
 
-          <p style={{ margin: 0, fontSize: 14, opacity: 0.95, lineHeight: 1.35 }}>
-            <strong>Hinweis:</strong> Dein <strong>Fundstück</strong> wartet jetzt auf dich. <br />
-            Es ist versteckt <strong>unter der Behausung der Meeresbewohner</strong>. <br />
+          <p
+            style={{ margin: 0, fontSize: 14, opacity: 0.95, lineHeight: 1.35 }}
+          >
+            <strong>Hinweis:</strong> Dein <strong>Fundstück</strong> wartet
+            jetzt auf dich. <br />
+            Es ist versteckt{" "}
+            <strong>unter der Behausung der Meeresbewohner</strong>. <br />
             Ab jetzt darf gesucht werden ✨
           </p>
         </div>

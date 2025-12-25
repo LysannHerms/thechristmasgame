@@ -35,13 +35,18 @@ export default function Sina1Wait() {
       bgImgSrc={bgStars}
       starImgSrc={starImg}
       extra={
-        <div style={{ width: "100%", padding: "14px 14px",
-    borderRadius: 14,
-    border: "1px solid rgba(101, 138, 77, 0.22)",
-    background: "rgba(7, 95, 13, 0.25)",
-    color: "white",
-    outline: "none",
-    fontSize: 16, }}>
+        <div
+          style={{
+            width: "100%",
+            padding: "14px 14px",
+            borderRadius: 14,
+            border: "1px solid rgba(101, 138, 77, 0.22)",
+            background: "rgba(7, 95, 13, 0.25)",
+            color: "white",
+            outline: "none",
+            fontSize: 16,
+          }}
+        >
           <input
             value={answer}
             onChange={(e) => setAnswer(e.target.value)}
@@ -50,20 +55,30 @@ export default function Sina1Wait() {
             style={{ width: "100%" }}
           />
           <div className="btnRow" style={{ marginTop: 10 }}>
-            <button className="primary" onClick={check} style={{ width: "100%" }}>
+            <button
+              className="primary"
+              onClick={check}
+              style={{ width: "100%" }}
+            >
               Prüfen
             </button>
           </div>
 
           {error && (
-            <p className="small" style={{ marginTop: 10, color: "rgba(255,80,80,0.95)" }}>
+            <p
+              className="small"
+              style={{ marginTop: 10, color: "rgba(255,80,80,0.95)" }}
+            >
               {error}
             </p>
           )}
 
           {ok && (
-            <p className="small" style={{ marginTop: 10, color: "rgba(174, 235, 155, 0.95)" }}>
-              Richtig ✅ 
+            <p
+              className="small"
+              style={{ marginTop: 10, color: "rgba(174, 235, 155, 0.95)" }}
+            >
+              Richtig ✅
             </p>
           )}
         </div>

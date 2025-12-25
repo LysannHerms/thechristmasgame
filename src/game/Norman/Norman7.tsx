@@ -17,11 +17,11 @@ export default function Norman7() {
     <CityHuntStep
       player="norman"
       title="Finale – finde die gesuchte Stadt"
-      prompt="In welcher Hauptstadt gibt es zur Weihnachtszeit riesige „Winter Illuminations“ – obwohl Weihnachten dort kein traditioneller Feiertag ist?"
+      prompt="In welcher Hauptstadt gibt es einen der bekanntesten Weihnachtsmärkte Europas direkt vor einem Schloss und vor dem Rathaus?"
       target={{
-        name: "Tokio",
-        lat: 35.6895,
-        lng: 139.6917,
+        name: "Wien",
+        lat: 48.2082,
+        lng: 16.3738,
         radiusMeters: 60000, // 60km: fair auf Handy
       }}
       initialCenter={[52.52, 13.405]} // Berlin

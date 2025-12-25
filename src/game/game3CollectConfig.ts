@@ -1,6 +1,8 @@
 import type { PlayerId } from "../lib/players";
 
-export type Found = { kind: "symbol"; value: string } | { kind: "digit"; value: string };
+export type Found =
+  | { kind: "symbol"; value: string }
+  | { kind: "digit"; value: string };
 
 export const GAME3_FOUND: Record<PlayerId, Found> = {
   // Beispiel: Oma hat das Plus

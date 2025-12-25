@@ -23,7 +23,7 @@ export default function Sina5() {
       title="Fragment 5 – Die Geschichte"
       story={story}
       onContinue={() => {
-        markDone("sina", 5);            // ✅ DAS war der fehlende Schritt
+        markDone("sina", 5); // ✅ DAS war der fehlende Schritt
         nav(go("sina", 5, "wait"));
       }}
     />

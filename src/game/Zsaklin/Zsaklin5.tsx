@@ -23,7 +23,7 @@ export default function Zsaklin5() {
       title="Fragment 5 – Die Geschichte"
       story={story}
       onContinue={() => {
-        markDone("zsaklin", 5);            // ✅ DAS war der fehlende Schritt
+        markDone("zsaklin", 5); // ✅ DAS war der fehlende Schritt
         nav(go("zsaklin", 5, "wait"));
       }}
     />
